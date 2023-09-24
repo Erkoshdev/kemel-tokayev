@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/plugins/real3dflipbook/flipbook.style.css">
+    <link rel="stylesheet" href="./assets/css/plugins/fontawesome/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/plugins/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/plugins/lightgallery/lightgallery-bundle.css">
+    <link rel="stylesheet" href="./assets/css/plugins/images/loading.gif">
+    <title>Книга</title>
+</head>
+<body class="wrapper bg-gray">
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <a href="#" class="avatar">
+                <!-- <img src="./assets/img/img-kemel-tokayev.jpg" alt="" class=""> -->
+                <span>К</span>
+            </a>
+            <button class="menu-btn">
+                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H29" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 8L29 8" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 15H29" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <nav class="menu">
+                <ul class="list">
+                    <li class="menu-item"><a href="#" class="text-md">Биография</a></li>
+                    <li class="menu-item"><a href="#" class="text-md">Творчество</a></li>
+                    <li class="menu-item"><a href="#" class="text-md">Слово о Кемеле</a></li>
+                    <li class="menu-item"><a href="#" class="text-md">Галерея</a></li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <ul class="list">
+                    <li class="lang-item"><a href="#" class="text-md">KZ</a></li>
+                    <li class="lang-item active"><a href="#" class="text-md">RU</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div class="menu-window">
+        <div class="menu-header">
+            <button class="close-btn icon-text text-sm">
+                <span>Закрыть</span>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 6.91L18.09 5.5L12.5 11.09L6.91 5.5L5.5 6.91L11.09 12.5L5.5 18.09L6.91 19.5L12.5 13.91L18.09 19.5L19.5 18.09L13.91 12.5L19.5 6.91Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-body">
+            <div class="accordion" id="accordionExample">
+                <ul class="list">
+                    <li>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Биография
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="list">
+                                        <li><a href="#" class="menu-sublink">Детство</a></li>
+                                        <li><a href="#" class="menu-sublink">Военное время</a></li>
+                                        <li><a href="#" class="menu-sublink">Студенческая жизнь</a></li>
+                                        <li><a href="#" class="menu-sublink">Трудовая деятельность</a></li>
+                                        <li><a href="#" class="menu-sublink">Творчество</a></li>
+                                        <li><a href="#" class="menu-sublink">Награды</a></li>
+                                        <li><a href="#" class="menu-sublink">Семья</a></li>
+                                        <li><a href="#" class="menu-sublink">Последние годы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-link" >
+                            Творчество
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-link" >
+                            Слово о Кемеле
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-link" >
+                            Галерея
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer">
+            <div class="lang">
+                <ul class="list">
+                    <li class="lang-item"><a href="#" class="text-md">Kz</a></li>
+                    <li class="lang-item active"><a href="#" class="text-md">Ru</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul class="list">
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <i class="icon ic-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <i class="icon ic-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <i class="icon ic-tiktok"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <i class="icon ic-telegram"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <i class="icon ic-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <main id="main" class="main book-reader">
+        <div class="container">
+            <div class="page-header">
+                <div class="breadcrumbs">
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="#" class="list-link back-btn">Назад</a>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="book-theme" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 17H9C10.6569 17 12 18.3431 12 20V10C12 7.17157 12 5.75736 11.1213 4.87868C10.2426 4 8.82843 4 6 4H5C4.05719 4 3.58579 4 3.29289 4.29289C3 4.58579 3 5.05719 3 6V15C3 15.9428 3 16.4142 3.29289 16.7071C3.58579 17 4.05719 17 5 17Z" fill="#7E869E" fill-opacity="0.25"/>
+                    <path d="M19 17H16C14.3431 17 13 18.3431 13 20V10C13 7.17157 13 5.75736 13.8787 4.87868C14.7574 4 16.1716 4 19 4C19.9428 4 20.4142 4 20.7071 4.29289C21 4.58579 21 5.05719 21 6V15C21 15.9428 21 16.4142 20.7071 16.7071C20.4142 17 19.9428 17 19 17Z" fill="#424242"/>
+                    <path d="M5 4.15C5 4.06716 5.06716 4 5.15 4H7.85C7.93284 4 8 4.06716 8 4.15V8.39645C8 8.61917 7.73071 8.73071 7.57322 8.57322L6.67678 7.67678C6.57915 7.57915 6.42085 7.57915 6.32322 7.67678L5.42678 8.57322C5.26929 8.73071 5 8.61917 5 8.39645V4.15Z" fill="#424242"/>
+                </svg>
+            </div>
+            <div class="page-body">
+                <div class="book-caption">
+                    <h2 class="title">ТОҒЫСҚАН ТАҒДЫР</h2>
+                    <a href="#" class="list-link back-btn">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.91L17.59 5.5L12 11.09L6.41 5.5L5 6.91L10.59 12.5L5 18.09L6.41 19.5L12 13.91L17.59 19.5L19 18.09L13.41 12.5L19 6.91Z" fill="var(--text-black)"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="book-frame">
+                    <div class="singleBook_block_item" id="singleBook_block_item"/>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="overlay"></div>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-blocks">
+                <nav class="menu">
+                    <ul class="list">
+                        <li class="menu-item"><a href="#" class="text-md">Биография</a></li>
+                        <li class="menu-item"><a href="#" class="text-md">Творчество</a></li>
+                        <li class="menu-item"><a href="#" class="text-md">Слово о Кемеле</a></li>
+                        <li class="menu-item"><a href="#" class="text-md">Галерея</a></li>
+                    </ul>
+                </nav>
+                <div class="lang">
+                    <ul class="list">
+                        <li class="lang-item"><a href="#" class="text-md">Kz</a></li>
+                        <li class="lang-item active"><a href="#" class="text-md">Ru</a></li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <a href="#" class="icon-text text-sm">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="8" stroke="#828387" stroke-width="1.5"/>
+                            <path d="M18.572 7.20637C17.8483 8.05353 16.8869 8.74862 15.7672 9.23422C14.6475 9.71983 13.4017 9.98201 12.1326 9.99911C10.8636 10.0162 9.60778 9.78773 8.4689 9.33256C7.33002 8.87739 6.34077 8.20858 5.58288 7.38139" stroke="#828387" stroke-width="1.5"/>
+                            <path d="M18.572 16.7936C17.8483 15.9465 16.8869 15.2514 15.7672 14.7658C14.6475 14.2802 13.4017 14.018 12.1326 14.0009C10.8636 13.9838 9.60778 14.2123 8.4689 14.6674C7.33002 15.1226 6.34077 15.7914 5.58288 16.6186" stroke="#828387" stroke-width="1.5"/>
+                            <path d="M12 4V20" stroke="#828387" stroke-width="1.5"/>
+                        </svg>
+                        info@toqaev.org
+                    </a>
+                    Казахстан, г.Астана
+                </div>
+                <div class="social">
+                    <ul class="list">
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="icon ic-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="icon ic-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="icon ic-tiktok"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="icon ic-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="icon ic-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/plugins/lightgallery/lg-thumbnail.min.js"></script>
+    <script src="./assets/js/plugins/lightgallery/lg-zoom.min.js"></script>
+    <script src="./assets/js/plugins/lightgallery/lightgallery.min.js"></script>
+    <script src="./assets/js/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/plugins/real3dflipbook/flipbook.min.js"></script>
+    <script>
+        //book reader oprions
+        $(document).ready(function () {
+          $("#singleBook_block_item").flipBook({
+                pdfUrl:"./assets/docs/book2.pdf",
+                backgroundColor: "#fff",
+                skin: "light",
+                skinColor: "#424242",
+                menuOverBook: true,
+                btnSize: 20,
+                sideBtnColor: 'var(--text-black)',
+                sideBtnBackground: 'transparent',
+                sideBtnSize: 15,
+                sideBtnRadius: 0,
+                sideBtnMargin: -40,
+                sideBtnPaddingV: 15,
+                sideBtnPaddingH: 20,
+                sideBtnShadow: '',
+                sideBtnTextShadow: '',
+                sideBtnBorder: '1px solid var(--text-black)',
+                floatingBtnColor: "var(--text-gray)",
+                floatingBtnColorHover: "",
+                floatingBtnBackground: "",
+                floatingBtnBackgroundHover: '',
+                floatingBtnSize: null,
+                floatingBtnRadius: null,
+                floatingBtnMargin: null,
+                floatingBtnPadding: null,
+                floatingBtnShadow: '',
+                floatingBtnTextShadow: '',
+                floatingBtnBorder: '',
+                currentPage: {
+                    enabled: true,
+                    title: "Current page",
+                    vAlign: 'top',
+                    hAlign: 'center',
+                    marginH: 0,
+                    marginV: 0,
+                    color: '#000',
+                    background: '#fff',
+                },
+                btnSearch: {
+                    enabled: true,
+                    title: "Поиск",
+                    iconFA: "flipbook-icon-search",
+                    iconM: "flipbook-icon-search1"
+                },
+                strings: {
+                    print: "Print",
+                    printLeftPage: "Print left page",
+                    printRightPage: "Print right page",
+                    printCurrentPage: "Print current page",
+                    printAllPages: "Print all pages",
+                    download: "Download",
+                    downloadLeftPage: "Download left page",
+                    downloadRightPage: "Download right page",
+                    downloadCurrentPage: "Download current page",
+                    downloadAllPages: "Download all pages",
+                    bookmarks: "Bookmarks",
+                    bookmarkLeftPage: "Bookmark left page",
+                    bookmarkRightPage: "Bookmark right page",
+                    bookmarkCurrentPage: "Bookmark current page",
+                    search: "Поиск",
+                    findInDocument: "Найти в документе",
+                    pagesFoundContaining: "найдены страницы, содержащие",
+                    noMatches: "Нет совпадений",
+                    matchesFound: 'совпадения найдены',
+                    page: 'Страница',
+                    matches: 'совпадения',
+                    thumbnails: "Thumbnails",
+                    tableOfContent: "Table of Contents",
+                    share: "Share",
+                    notes: "Notes",
+                    pressEscToClose: "Press ESC to close",
+                    password: "Password",
+                    addNote: "Add note",
+                    typeInYourNote: "Type in your note..."
+                },
+                mobile: {
+                    sideBtnColor: '',
+                    sideBtnBackground: '',
+                    sideBtnSize: 0,
+                    sideBtnRadius: 0,
+                    sideBtnMargin: 0,
+                    sideBtnPaddingV: 0,
+                    sideBtnPaddingH: 0,
+                    sideBtnShadow: '',
+                    sideBtnTextShadow: '',
+                    sideBtnBorder: '',
+                    btnPrev: {
+                        enabled: false,
+                    },
+                    btnNext: {
+                        enabled: false,
+                    }
+                }
+            });
+        })
+
+        //toggle dark mode
+        $('.book-theme').click(function () {
+            $('body').toggleClass('dark-mode');
+            $('body').toggleClass('bg-gray');
+        });
+      </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

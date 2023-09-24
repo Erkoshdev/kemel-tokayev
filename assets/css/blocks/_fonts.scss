@@ -1,0 +1,38 @@
+// Font "Alice"
+@font-face {
+    font-family: "Alice";
+    src: url(../fonts/Alice/Alice-Regular.woff) format("ttf"), url(../fonts/Alice/Alice-Regular.woff) format("woff"),
+        url(../fonts/Alice/Alice-Regular.woff) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Font "Montserrat"
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.woff) format("ttf"), url(../fonts/Montserrat/Montserrat-Regular.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-Regular.woff) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Medium.woff) format("ttf"), url(../fonts/Montserrat/Montserrat-Medium.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-Medium.woff) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.woff) format("ttf"), url(../fonts/Montserrat/Montserrat-SemiBold.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-SemiBold.woff) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Bold.woff) format("ttf"), url(../fonts/Montserrat/Montserrat-Bold.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-Bold.woff) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}

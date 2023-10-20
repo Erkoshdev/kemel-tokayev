@@ -675,9 +675,11 @@ input {
 }
 
 .promo {
-  background-image: url("../img/img-kemel-tokayev.jpg");
-  background-position: center;
-  background-size: cover;
+  background-color: #F7F7F8;
+  background-image: url("../img/img-kemel-tokayev-light.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto calc(100% - 30px);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -689,43 +691,43 @@ input {
   align-items: center;
 }
 .promo-date .title-sm {
-  color: var(--white);
+  color: var(--text-black);
   margin: 0;
 }
 .promo-date span {
   width: 99px;
   height: 1.5px;
-  background-color: var(--white);
+  background-color: var(--text-black);
   margin: 0 10px;
 }
 .promo-text {
   margin-bottom: 100px;
 }
 .promo-title {
-  color: var(--white);
+  color: var(--text-black);
   width: 50%;
   margin: 20px 0 30px 0;
   line-height: 100%;
 }
 .promo-quote {
-  color: var(--white);
+  color: var(--text-black);
   opacity: 0.8;
   line-height: normal;
   width: 361px;
   position: relative;
-  padding-top: 70px;
+  /*padding-top: 70px;*/
 }
-.promo-quote::before {
-  content: "";
-  background-image: url("../img/icons/ic-quote.svg");
-  width: 64px;
-  height: 59px;
-  position: absolute;
-  background-position: left;
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-}
+/*.promo-quote::before {*/
+/*  content: "";*/
+/*  background-image: url("../img/icons/ic-quote.svg");*/
+/*  width: 64px;*/
+/*  height: 59px;*/
+/*  position: absolute;*/
+/*  background-position: left;*/
+/*  background-repeat: no-repeat;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*}*/
 .promo-mouse {
   display: flex;
   flex-direction: column;
@@ -2277,7 +2279,8 @@ input {
     font-size: 32px;
   }
   .promo {
-    background-image: url(../img/promo-__bg-sm.jpg);
+    background-size: auto 70%;
+    background-position: -130px bottom;
   }
   .promo__date {
     margin-bottom: 8px;

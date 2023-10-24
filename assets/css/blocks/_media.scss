@@ -750,7 +750,9 @@
         font-size: 32px;
     }
     .promo {
-        background-image: url(../img/promo-__bg-sm.jpg);
+        // background-image: url(../img/promo-__bg-sm.jpg);
+        background-size: auto 70%;
+        background-position: -130px bottom;
         &__date {
             margin-bottom: 8px;
             span:last-child,

@@ -13,6 +13,58 @@
         gap: 20px;
     }
 
+    &.fixed {
+        position: fixed;
+        width: 100%;
+    }
+
+    &.dark {
+        background-color: var(--text-black);
+
+        .menu {
+            &-btn {
+                svg {
+                    path {
+                        stroke: var(--white);
+                    }
+                }
+            }
+            &-item {
+                .text-md {
+                    color: var(--white);
+                }
+            }
+            &-link {
+                &:after {
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: var(--white);
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+        
+                &:hover:after {
+                    width: 100%; 
+                    left: 0;
+                }
+            }
+        }
+        .lang {
+            &-item {
+                &.active {
+                    .text-md {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+
     .avatar {
         width: 32px;
         height: 32px;
@@ -167,6 +219,52 @@
                 }
             }
         }
+
+        .menu-link, .menu-sublink {
+            position: relative;
+            padding-bottom: 7px;
+            &:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: var(--white);
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+        
+            &:hover:after {
+                width: 100%; 
+                left: 0;
+            }
+        }
+
+        .accordion-button {
+            position: relative;
+            padding-bottom: 7px !important;
+            width: auto;
+
+            &:before {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: var(--white);
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+        
+            &:hover:before {
+                width: 100%; 
+                left: 0;
+            }
+        }
     }
     &-header {
         position: relative;
@@ -181,6 +279,8 @@
     &-link {
         color: var(--white);
         text-decoration: none;
+        position: relative;
+        padding-bottom: 7px;
 
         &.accordion {
             &-button {
@@ -195,6 +295,24 @@
                     color: var(--white) !important;
                 }
             }
+        }
+
+        &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: var(--text-black);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        &:hover:after {
+            width: 100%; 
+            left: 0;
         }
     }
     &-footer {

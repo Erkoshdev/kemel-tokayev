@@ -497,6 +497,38 @@ input {
   justify-content: space-between;
   gap: 20px;
 }
+.header.fixed {
+  position: fixed;
+  width: 100%;
+}
+.header.dark {
+  background-color: var(--text-black);
+}
+.header.dark .menu-btn svg path {
+  stroke: var(--white);
+}
+.header.dark .menu-item .text-md {
+  color: var(--white);
+}
+.header.dark .menu-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--white);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header.dark .menu-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+.header.dark .lang-item.active .text-md {
+  color: var(--white);
+}
 .header .avatar {
   width: 32px;
   height: 32px;
@@ -610,6 +642,47 @@ input {
 .menu-window .lang-item.active .text-md {
   color: #fff;
 }
+.menu-window .menu-link, .menu-window .menu-sublink {
+  position: relative;
+  padding-bottom: 7px;
+}
+.menu-window .menu-link:after, .menu-window .menu-sublink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--white);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu-window .menu-link:hover:after, .menu-window .menu-sublink:hover:after {
+  width: 100%;
+  left: 0;
+}
+.menu-window .accordion-button {
+  position: relative;
+  padding-bottom: 7px !important;
+  width: auto;
+}
+.menu-window .accordion-button:before {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--white);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu-window .accordion-button:hover:before {
+  width: 100%;
+  left: 0;
+}
 .menu-header {
   position: relative;
   margin-bottom: 60px;
@@ -622,6 +695,8 @@ input {
 .menu-link {
   color: var(--white);
   text-decoration: none;
+  position: relative;
+  padding-bottom: 7px;
 }
 .menu-link.accordion-button {
   color: var(--white);
@@ -632,6 +707,22 @@ input {
 }
 .menu-link.accordion-button:not(.collapsed) {
   color: var(--white) !important;
+}
+.menu-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--text-black);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu-link:hover:after {
+  width: 100%;
+  left: 0;
 }
 .menu-footer {
   margin-top: auto;
@@ -675,9 +766,11 @@ input {
 }
 
 .promo {
-  background-image: url("../img/img-kemel-tokayev.jpg");
-  background-position: center;
-  background-size: cover;
+  background-color: #F7F7F8;
+  background-image: url("../img/img-kemel-tokayev-light.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto calc(100% - 30px);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -689,42 +782,30 @@ input {
   align-items: center;
 }
 .promo-date .title-sm {
-  color: var(--white);
+  color: var(--text-black);
   margin: 0;
 }
 .promo-date span {
   width: 99px;
   height: 1.5px;
-  background-color: var(--white);
+  background-color: var(--text-black);
   margin: 0 10px;
 }
 .promo-text {
   margin-bottom: 100px;
 }
 .promo-title {
-  color: var(--white);
+  color: var(--text-black);
   width: 50%;
   margin: 20px 0 30px 0;
   line-height: 100%;
 }
 .promo-quote {
-  color: var(--white);
+  color: var(--text-black);
   opacity: 0.8;
   line-height: normal;
   width: 361px;
   position: relative;
-  padding-top: 70px;
-}
-.promo-quote::before {
-  content: "";
-  background-image: url("../img/icons/ic-quote.svg");
-  width: 64px;
-  height: 59px;
-  position: absolute;
-  background-position: left;
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
 }
 .promo-mouse {
   display: flex;
@@ -1229,13 +1310,11 @@ input {
   z-index: 1;
 }
 .book-theme {
+  position: absolute;
+  top: 0;
+  left: 80px;
   z-index: 1;
   background: #fff;
-  display: block;
-  width: fit-content;
-  height: fit-content;
-  margin-left: auto;
-  cursor: pointer;
 }
 
 .section {
@@ -2277,7 +2356,8 @@ input {
     font-size: 32px;
   }
   .promo {
-    background-image: url(../img/promo-__bg-sm.jpg);
+    background-size: auto 70%;
+    background-position: -130px bottom;
   }
   .promo__date {
     margin-bottom: 8px;

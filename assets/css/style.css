@@ -2088,7 +2088,7 @@ input {
     margin: 10px 0;
   }
   .promo-quote {
-    width: 60%;
+    width: 170px;
     padding-top: 35px;
   }
   .promo-quote:before {
@@ -2356,8 +2356,7 @@ input {
     font-size: 32px;
   }
   .promo {
-    background-size: auto 70%;
-    background-position: -130px bottom;
+    background-image: url(../img/promo-__bg-sm.png);
   }
   .promo__date {
     margin-bottom: 8px;

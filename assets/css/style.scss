@@ -88,6 +88,7 @@
         >.title {
             color: var(--text-gray);
             margin-bottom: 0;
+            font-size: 54px;
         }
 
         .swiper {
@@ -735,7 +736,7 @@
         min-height: 231px;
         height: auto;
         position: relative;
-        margin-bottom: 16px;
+        margin: 16px 0;
     }
 
     &__left-img {
@@ -816,7 +817,7 @@
     &__figure-wrapper {
         position: relative;
         width: 100%;
-        height: 360px;
+        height: 440px;
     }
     &__right--row {
         display: flex;
@@ -997,9 +998,22 @@
 .biography {
     padding-bottom: 50px;
     margin-top: 75px;
+
+    .section {
+        &__left-wrapper {
+            min-width: 279px;
+            min-height: 414px;
+        }
+    }
 }
 .time {
     padding-bottom: 30px;
+    .section {
+        &__left-wrapper {
+            min-width: 279px;
+            min-height: 414px;
+        }
+    }
 }
 .time.section {
     .section__right--gap30 {
@@ -1013,6 +1027,21 @@
 }
 .live {
     padding-bottom: 50px;
+
+    .section {
+        &__right {
+            .section {
+                &__left-box {
+                    top: 0;
+                }
+                &__left-wrapper {
+                    min-width: 279px;
+                    min-height: 183px;
+                }
+            }
+        }
+        
+    }
 }
 .activity {
     padding-bottom: 50px;
@@ -1023,7 +1052,8 @@
     }
     .section__right {
         .section__left-wrapper {
-            display: none;
+            min-width: 279px;
+            min-height: 450px;
         }
     }
 }
@@ -1041,6 +1071,25 @@
         }
     }
 }
+.family {
+    .section {
+        &__left-wrapper {
+            min-width: 279px;
+            min-height: 353px;
+        }
+        &__left-box {
+            top: 110px;
+        }
+    }
+}
+.last {
+    .section {
+        &__left-box {
+            top: 0px;
+        }
+    }
+}
+
 
 .lg {
     &-sub {
@@ -1153,7 +1202,7 @@
     &-image {
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
+        object-fit: contain !important;
     }
     &-content {
         top: 0 !important;

@@ -330,6 +330,7 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 150px;
+  position: relative;
 }
 .page-header > .title {
   text-transform: uppercase;
@@ -362,6 +363,13 @@ input {
   padding: 10px 35px;
   border: 1.5px solid var(--text-black);
 }
+.arrow-btn:hover {
+  background-color: var(--text-black);
+  transition: all ease-in 0.3s;
+}
+.arrow-btn:hover svg path {
+  stroke: var(--white);
+}
 
 .card {
   padding: 20px 22px !important;
@@ -371,7 +379,6 @@ input {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-height: 754px;
   height: 100%;
 }
 .card-body {
@@ -382,14 +389,15 @@ input {
 }
 .card-img {
   width: 100%;
-  height: 335px;
+  height: 265px;
   position: relative;
+  background: #424242;
 }
 .card-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .card-img .detail {
   display: grid;
@@ -475,6 +483,14 @@ input {
   border: 1px solid var(--text-black);
   padding: 10px;
   color: var(--text-black);
+}
+.card-btn:hover {
+  transition: all ease-in 0.3s;
+  background-color: var(--text-black);
+  color: var(--white);
+}
+.card-btn:hover svg path, .card-btn:hover svg rect {
+  stroke: var(--white);
 }
 
 .dark-mode .breadcrumbs .list-link.back-btn::before {
@@ -770,7 +786,6 @@ input {
   background-image: url("../img/img-kemel-tokayev-light.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: auto calc(100% - 30px);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -826,6 +841,7 @@ input {
 .works-header > .title {
   color: var(--text-gray);
   margin-bottom: 0;
+  font-size: 54px;
 }
 .works-header .swiper-btns {
   display: flex;
@@ -834,6 +850,9 @@ input {
 }
 .works-body .swiper-slide {
   height: auto !important;
+}
+.works-body .swiper-wrapper {
+  height: fit-content;
 }
 
 .writers .page-body {
@@ -1312,7 +1331,7 @@ input {
 .book-theme {
   position: absolute;
   top: 0;
-  left: 80px;
+  right: 0;
   z-index: 1;
   background: #fff;
 }
@@ -1362,7 +1381,7 @@ input {
   min-height: 231px;
   height: auto;
   position: relative;
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 .section__left-img {
   position: absolute;
@@ -1437,7 +1456,7 @@ input {
 .section__figure-wrapper {
   position: relative;
   width: 100%;
-  height: 360px;
+  height: 440px;
 }
 .section__right--row {
   display: flex;
@@ -1601,9 +1620,17 @@ input {
   padding-bottom: 50px;
   margin-top: 75px;
 }
+.biography .section__left-wrapper {
+  min-width: 279px;
+  min-height: 414px;
+}
 
 .time {
   padding-bottom: 30px;
+}
+.time .section__left-wrapper {
+  min-width: 279px;
+  min-height: 414px;
 }
 
 .time.section .section__right--gap30 {
@@ -1618,6 +1645,13 @@ input {
 .live {
   padding-bottom: 50px;
 }
+.live .section__right .section__left-box {
+  top: 0;
+}
+.live .section__right .section__left-wrapper {
+  min-width: 279px;
+  min-height: 183px;
+}
 
 .activity {
   padding-bottom: 50px;
@@ -1628,7 +1662,8 @@ input {
   gap: 20px 0;
 }
 .activity .section__right .section__left-wrapper {
-  display: none;
+  min-width: 279px;
+  min-height: 450px;
 }
 
 .creation {
@@ -1645,6 +1680,18 @@ input {
   height: 360px;
   max-width: 278px;
   margin-bottom: 0;
+}
+
+.family .section__left-wrapper {
+  min-width: 279px;
+  min-height: 353px;
+}
+.family .section__left-box {
+  top: 110px;
+}
+
+.last .section__left-box {
+  top: 0px;
 }
 
 .lg-sub-html .caption-block {
@@ -1739,8 +1786,8 @@ input {
 .lg-image {
   width: 100% !important;
   height: 100% !important;
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 .lg-content {
   top: 0 !important;
@@ -1826,7 +1873,6 @@ input {
     order: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px 0;
   }
   .biography .section__figure {
     order: 3;
@@ -1873,9 +1919,6 @@ input {
   .time .section__right .section__left-box {
     width: 278px;
     order: 6;
-  }
-  .live .section__left-box {
-    display: none;
   }
   .creation .section__cards {
     display: flex;
@@ -1970,10 +2013,27 @@ input {
   .footer .social {
     grid-area: 1/2/2/3;
   }
-  .writers-header {
+  .writers .page-body {
+    flex-direction: column;
+  }
+  .writers-header > .list {
+    gap: 0;
+  }
+  .writers-header > .list .list-item {
+    max-width: none;
+    width: 50%;
+  }
+  .writers-header > .list .list-link {
+    padding: 12px 0;
+    margin-top: 15px;
+  }
+  .writers-block.mobile {
+    margin-top: 0;
+  }
+  .writers-block.left {
     display: none;
   }
-  .writers-block.left, .writers-block.right {
+  .writers-block.right .writers-content {
     display: none;
   }
   .gallery-header {
@@ -2181,6 +2241,7 @@ input {
   }
   .book-theme {
     left: 0;
+    top: -15px;
   }
 }
 @media (max-width: 600px) {
@@ -2196,7 +2257,7 @@ input {
     box-shadow: 0px 4px 34px 0px rgba(148, 148, 148, 0.3);
   }
   .card-img {
-    height: 314px;
+    height: 230px;
   }
   .card-star {
     display: none;
@@ -2235,8 +2296,6 @@ input {
   }
   .biography .section__left-box {
     margin-top: 20px;
-  }
-  .biography .section__left-box p {
     padding: 15px 20px;
     background-color: var(--white);
     box-shadow: 0px 4px 34px 0px rgba(148, 148, 148, 0.3);

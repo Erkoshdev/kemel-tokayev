@@ -355,6 +355,17 @@ input {
     &-btn {
         padding: 10px 35px;
         border: 1.5px solid var(--text-black);
+
+        &:hover {
+            background-color: var(--text-black);
+            transition: all ease-in 0.3s;
+
+            svg {
+                path {
+                    stroke: var(--white);
+                }
+            }
+        }
     }
 }
 
@@ -366,7 +377,6 @@ input {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-height: 754px;
     height: 100%;
 
     &-body {
@@ -378,13 +388,14 @@ input {
 
     &-img {
         width: 100%;
-        height: 335px;
+        height: 265px;
         position: relative;
+        background: #424242;
 
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .detail {
@@ -483,6 +494,18 @@ input {
         border: 1px solid var(--text-black);
         padding: 10px;
         color: var(--text-black);
+
+        &:hover {
+            transition: all ease-in .3s;
+            background-color: var(--text-black);
+            color: var(--white);
+
+            svg {
+                path, rect {
+                    stroke: var(--white);
+                }
+            }
+        }
     }
 }
 

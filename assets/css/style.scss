@@ -9,12 +9,12 @@
     background-image: url("../img/img-kemel-tokayev-light.png");
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: auto calc(100% - 30px);
+    background-size: 850px auto;
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding: 160px 0 60px 0;
+    padding: 140px 0 60px 0;
 
     &-date {
         display: flex;
@@ -23,6 +23,7 @@
         .title-sm {
             color: var(--text-black);
             margin: 0;
+            font-size: 26px;
         }
 
         span {
@@ -34,7 +35,7 @@
     }
 
     &-text {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 
     &-title {
@@ -48,7 +49,7 @@
         color: var(--text-black);
         opacity: 0.8;
         line-height: normal;
-        width: 361px;
+        width: 500px;
         position: relative;
         // padding-top: 70px;
         
@@ -103,7 +104,7 @@
     &-body {
         .swiper {
             &-slide {
-                height: auto !important;
+                height: fit-content;
             }
             
         }
@@ -684,7 +685,7 @@
     &-theme {
         position: absolute;
         top: 0;
-        left: 80px;
+        right: 0;
         z-index: 1;
         background: #fff;
     }

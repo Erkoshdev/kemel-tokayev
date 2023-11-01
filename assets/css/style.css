@@ -136,7 +136,7 @@ input {
 }
 
 .title-xxl {
-  font-size: 96px;
+  font-size: 75px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -786,11 +786,12 @@ input {
   background-image: url("../img/img-kemel-tokayev-light.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 850px auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 160px 0 60px 0;
+  padding: 140px 0 60px 0;
 }
 .promo-date {
   display: flex;
@@ -799,6 +800,7 @@ input {
 .promo-date .title-sm {
   color: var(--text-black);
   margin: 0;
+  font-size: 26px;
 }
 .promo-date span {
   width: 99px;
@@ -807,7 +809,7 @@ input {
   margin: 0 10px;
 }
 .promo-text {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .promo-title {
   color: var(--text-black);
@@ -819,7 +821,7 @@ input {
   color: var(--text-black);
   opacity: 0.8;
   line-height: normal;
-  width: 361px;
+  width: 500px;
   position: relative;
 }
 .promo-mouse {
@@ -849,9 +851,7 @@ input {
   gap: 22px;
 }
 .works-body .swiper-slide {
-  height: auto !important;
-}
-.works-body .swiper-wrapper {
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -2241,7 +2241,6 @@ input {
   }
   .book-theme {
     left: 0;
-    top: -15px;
   }
 }
 @media (max-width: 600px) {
@@ -2416,6 +2415,7 @@ input {
   }
   .promo {
     background-image: url(../img/promo-__bg-sm.png);
+    background-size: initial;
   }
   .promo__date {
     margin-bottom: 8px;

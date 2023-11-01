@@ -777,6 +777,7 @@
     }
     .promo {
         background-image: url(../img/promo-__bg-sm.png);
+        background-size: initial;
         
         &__date {
             margin-bottom: 8px;

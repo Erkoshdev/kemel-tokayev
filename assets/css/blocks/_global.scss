@@ -102,7 +102,7 @@ input {
 
 // text font sizes
 .title-xxl {
-    font-size: 96px;
+    font-size: 75px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -312,6 +312,7 @@ input {
         display: flex;
         flex-direction: column;
         margin-top: 150px;
+        position: relative;
 
         >.title {
             text-transform: uppercase;

@@ -157,16 +157,8 @@
                     <div class="works-header">
                         <h2 class="title title-lg">Повести</h2>
                         <div class="swiper-btns">
-                            <button class="arrow-btn swiper-button-prev-1 left ">
-                                <svg width="51" height="10" viewBox="0 0 51 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 5H1M1 5L5 9M1 5L5 1" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="arrow-btn swiper-button-next-1 right">
-                                <svg width="51" height="10" viewBox="0 0 51 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H50M50 5L46 9M50 5L46 1" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                            <div class="arrow-btn next-btn-1 swiper-button-next"></div>
+                            <div class="arrow-btn prev-btn-1 swiper-button-prev"></div>
                         </div>
                     </div>
                     <div class="works-body">
@@ -418,16 +410,8 @@
                     <div class="works-header">
                         <h2 class="title title-lg">Романы</h2>
                         <div class="swiper-btns">
-                            <button class="arrow-btn swiper-button-prev-2 left ">
-                                <svg width="51" height="10" viewBox="0 0 51 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 5H1M1 5L5 9M1 5L5 1" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="arrow-btn swiper-button-next-2 right">
-                                <svg width="51" height="10" viewBox="0 0 51 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H50M50 5L46 9M50 5L46 1" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                            <div class="arrow-btn next-btn-2 swiper-button-next"></div>
+                            <div class="arrow-btn prev-btn-2 swiper-button-prev"></div>
                         </div>
                     </div>
                     <div class="works-body">
@@ -619,16 +603,8 @@
                     <div class="works-header">
                         <h2 class="title title-lg">Сборники</h2>
                         <div class="swiper-btns">
-                            <button class="arrow-btn swiper-button-prev-3 left">
-                                <svg width="51" height="10" viewBox="0 0 51 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 5H1M1 5L5 9M1 5L5 1" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="arrow-btn swiper-button-next-3 right">
-                                <svg width="51" height="10" viewBox="0 0 51 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H50M50 5L46 9M50 5L46 1" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                            <div class="arrow-btn next-btn-3 swiper-button-next"></div>
+                            <div class="arrow-btn prev-btn-3 swiper-button-prev"></div>
                         </div>
                     </div>
                     <div class="works-body">
@@ -953,8 +929,8 @@
         //sliders
         var swiper1 = new Swiper(".works-swiper-1", {
             navigation: {
-                nextEl: ".swiper-button-next-1",
-                prevEl: ".swiper-button-prev-1",
+                nextEl: ".next-btn-1",
+                prevEl: ".prev-btn-1",
             },
             slidesPerView: 1,
             spaceBetween: 20,
@@ -988,8 +964,8 @@
 
         var swiper2 = new Swiper(".works-swiper-2", {
             navigation: {
-                nextEl: ".swiper-button-next-2",
-                prevEl: ".swiper-button-prev-2",
+                nextEl: ".next-btn-2",
+                prevEl: ".prev-btn-2",
             },
             slidesPerView: 1,
             spaceBetween: 20,
@@ -1023,8 +999,8 @@
 
         var swiper3 = new Swiper(".works-swiper-3", {
             navigation: {
-                nextEl: ".swiper-button-next-3",
-                prevEl: ".swiper-button-prev-3",
+                nextEl: ".next-btn-3",
+                prevEl: ".prev-btn-3",
             },
             slidesPerView: 1,
             spaceBetween: 20,

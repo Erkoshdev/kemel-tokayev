@@ -18,8 +18,8 @@ $('.menu-link, .menu-sublink').click(function () {
 let $lgSwiper = document.getElementById('lg-swipper')
 var swiper4 = new Swiper(".gallery-swiper", {
     navigation: {
-      nextEl: ".swiper-button-next-4",
-      prevEl: ".swiper-button-prev-4",
+      nextEl: ".next-btn-4",
+      prevEl: ".prev-btn-4",
     },
     slidesPerView: 1,
     spaceBetween: 10,
@@ -56,7 +56,13 @@ function showBlock(elem_id) {
 
 //hide gallery contents
 function hideBlock(elem_id) {
+    $(elem_id).css('display', 'none');
     $(".card-btn.hide").css('display', 'none');
     $(".card-btn.show").css('display', 'block');
-    $(elem_id).css('display', 'none');
 }
+
+$('#play-button').click(function() {
+    $('html,body').animate({
+        scrollTop: $('.gallery-description').offSet().top}, 
+        'slow');
+});

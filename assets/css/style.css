@@ -217,6 +217,7 @@ input {
 
 .main {
   overflow-x: hidden;
+  margin-bottom: 85px;
 }
 .main.gallery {
   overflow-x: initial;
@@ -360,15 +361,34 @@ input {
 }
 
 .arrow-btn {
-  padding: 10px 35px;
-  border: 1.5px solid var(--text-black);
+  width: 119px;
 }
-.arrow-btn:hover {
-  background-color: var(--text-black);
-  transition: all ease-in 0.3s;
+.arrow-btn.swiper-button-prev, .arrow-btn.swiper-button-next {
+  width: 119px;
+  border: 1px solid var(--text-black);
 }
-.arrow-btn:hover svg path {
-  stroke: var(--white);
+.arrow-btn.swiper-button-prev::after, .arrow-btn.swiper-button-next::after {
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: none;
+  padding: 18px 35px;
+}
+.arrow-btn.swiper-button-prev {
+  left: 0;
+}
+.arrow-btn.swiper-button-prev::after {
+  background-image: url("../../assets/img/icons/ic-swiper-arrow-left-black.svg") !important;
+}
+.arrow-btn.swiper-button-next {
+  right: 0;
+}
+.arrow-btn.swiper-button-next::after {
+  background-image: url("../../assets/img/icons/ic-swiper-arrow-right-black.svg") !important;
+}
+.arrow-btn.swiper-button-lock {
+  display: none;
 }
 
 .card {
@@ -483,6 +503,8 @@ input {
   border: 1px solid var(--text-black);
   padding: 10px;
   color: var(--text-black);
+  text-decoration: none;
+  text-align: center;
 }
 .card-btn:hover {
   transition: all ease-in 0.3s;
@@ -518,32 +540,7 @@ input {
   width: 100%;
 }
 .header.dark {
-  background-color: var(--text-black);
-}
-.header.dark .menu-btn svg path {
-  stroke: var(--white);
-}
-.header.dark .menu-item .text-md {
-  color: var(--white);
-}
-.header.dark .menu-link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: var(--white);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.header.dark .menu-link:hover:after {
-  width: 100%;
-  left: 0;
-}
-.header.dark .lang-item.active .text-md {
-  color: var(--white);
+  background-color: #F7F7F8;
 }
 .header .avatar {
   width: 32px;
@@ -786,12 +783,12 @@ input {
   background-image: url("../img/img-kemel-tokayev-light.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 850px auto;
+  background-size: 800px auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 140px 0 60px 0;
+  padding: 130px 0 60px 0;
 }
 .promo-date {
   display: flex;
@@ -803,19 +800,23 @@ input {
   font-size: 26px;
 }
 .promo-date span {
-  width: 99px;
+  width: 16px;
   height: 1.5px;
   background-color: var(--text-black);
   margin: 0 10px;
 }
 .promo-text {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .promo-title {
   color: var(--text-black);
   width: 50%;
   margin: 20px 0 30px 0;
   line-height: 100%;
+  font-size: 70px;
 }
 .promo-quote {
   color: var(--text-black);
@@ -823,6 +824,21 @@ input {
   line-height: normal;
   width: 500px;
   position: relative;
+  margin-top: 25px;
+}
+.promo-quote::before {
+  content: "";
+  background-image: url("../img/icons/ic-quote.svg");
+  width: 124px;
+  height: 130px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .promo-mouse {
   display: flex;
@@ -849,10 +865,12 @@ input {
   display: flex;
   align-items: center;
   gap: 22px;
+  position: relative;
+  width: 260px;
+  height: 44px;
 }
 .works-body .swiper-slide {
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .writers .page-body {
@@ -874,7 +892,7 @@ input {
   max-width: 278px;
 }
 .writers-block.right {
-  max-width: 872px;
+  max-width: 100%;
 }
 .writers-block.mobile {
   margin-top: 50px;
@@ -1083,10 +1101,9 @@ input {
   display: flex;
   align-items: center;
   gap: 20px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  position: relative;
+  width: 260px;
+  height: 44px;
 }
 .gallery-block .swiper-paginations {
   position: absolute;
@@ -1138,14 +1155,17 @@ input {
 .gallery-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   border: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: #4f4f4f;
 }
 .gallery-image .text-block {
   width: 100%;
   max-width: 376px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .gallery-image .text-block .year {
   position: relative;
@@ -1195,14 +1215,15 @@ input {
   top: 10px;
   right: 10px;
 }
+.gallery-image.-photo .swiper-btns {
+  margin-top: 100px;
+}
 .gallery-image.-interview .swiper-btns {
-  top: auto;
-  bottom: 0;
-  left: 0;
   width: 100%;
+  margin-top: auto;
 }
 .gallery-image.-interview .swiper-btns .arrow-btn {
-  width: 100%;
+  width: 178px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1223,7 +1244,6 @@ input {
 }
 .gallery-swiper {
   width: 100%;
-  max-width: 764px;
   height: 567px;
   overflow: hidden;
   position: relative;
@@ -1306,10 +1326,13 @@ input {
 .book-frame .flipbook-right-arrow {
   right: -40px;
 }
+.book-frame .flipbook-menuBottom {
+  border: 1px solid var(--text-black) !important;
+  border-top: none !important;
+}
 .book-caption {
   text-align: center;
   position: relative;
-  margin-top: 22px;
 }
 .book-caption > .title {
   font-size: 21px;
@@ -1318,9 +1341,11 @@ input {
   line-height: normal;
   color: var(--text-black);
   opacity: 0.5;
-  position: absolute;
-  top: -42px;
-  width: 100%;
+  position: relative;
+  top: -20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 .book-caption .back-btn {
   display: none;
@@ -1554,7 +1579,7 @@ input {
   top: 50%;
   transform: translateY(-50%);
   font-size: 128px;
-  opacity: 0.5;
+  opacity: 1;
   color: rgba(var(--text-gray), 0.5);
   font-family: "Alice", serif;
 }
@@ -1583,7 +1608,7 @@ input {
   gap: 10px;
 }
 .section__card-link {
-  padding: 8px;
+  padding: 8px 21px;
   display: inline-flex;
   gap: 0 10px;
   align-items: center;
@@ -1591,8 +1616,6 @@ input {
   border: 1px solid var(--text-black);
   color: var(--text-black);
   text-decoration: none;
-  max-width: calc(33% - 10px);
-  width: 100%;
   font-size: 14px;
   transition: 0.3s all;
 }
@@ -1646,7 +1669,7 @@ input {
   padding-bottom: 50px;
 }
 .live .section__right .section__left-box {
-  top: 0;
+  top: 165px;
 }
 .live .section__right .section__left-wrapper {
   min-width: 279px;
@@ -1667,7 +1690,7 @@ input {
 }
 
 .creation {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .awards {
@@ -1682,16 +1705,20 @@ input {
   margin-bottom: 0;
 }
 
+.family {
+  padding-bottom: 50px;
+}
 .family .section__left-wrapper {
   min-width: 279px;
   min-height: 353px;
 }
 .family .section__left-box {
-  top: 110px;
+  top: 320px;
 }
 
 .last .section__left-box {
-  top: 0px;
+  top: auto;
+  bottom: 0px;
 }
 
 .lg-sub-html .caption-block {
@@ -1732,7 +1759,7 @@ input {
   height: 100%;
 }
 .lg-prev, .lg-next {
-  bottom: 100px;
+  bottom: 45%;
   top: auto !important;
   width: 131px;
   padding: 18px !important;
@@ -1758,7 +1785,7 @@ input {
   content: "" !important;
 }
 .lg-prev {
-  left: 10% !important;
+  left: 5% !important;
 }
 .lg-prev:after {
   background-image: url("../img/icons/ic-swiper-arrow-left.svg");
@@ -1771,7 +1798,7 @@ input {
   background-image: url("../img/icons/ic-swiper-arrow-left-gray.svg");
 }
 .lg-next {
-  right: 10% !important;
+  right: 5% !important;
 }
 .lg-next:after {
   background-image: url("../img/icons/ic-swiper-arrow-right.svg");
@@ -2046,6 +2073,9 @@ input {
   .gallery-block {
     margin-top: 30px;
   }
+  .gallery-block .arrow-btn {
+    width: 46%;
+  }
   .gallery-block .swiper-paginations {
     top: 0;
     right: 0;
@@ -2069,6 +2099,9 @@ input {
   }
   .gallery-image.-interview .swiper-btns {
     display: none;
+  }
+  .gallery-image.-interview .swiper-btns .arrow-btn {
+    width: 48%;
   }
   .gallery-image.-interview .swiper-btns.mobile {
     display: flex;
@@ -2133,8 +2166,32 @@ input {
   .writers-block.mobile {
     display: none;
   }
+  .promo-text {
+    text-align: center;
+  }
+  .promo-title {
+    order: 1;
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  .promo-date {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  .promo-quote {
+    order: 3;
+    width: 100%;
+  }
+  .promo-mouse {
+    order: 4;
+  }
 }
 @media (max-width: 767px) {
+  .main {
+    margin-bottom: 50px;
+  }
   .title-xxl {
     font-size: 32px;
   }
@@ -2154,6 +2211,8 @@ input {
   .promo-quote:before {
     width: 21px;
     height: 28px;
+    right: auto;
+    bottom: auto;
     background-image: url("../img/icons/ic-quote-sm.svg");
   }
   .promo-date span {
@@ -2268,10 +2327,15 @@ input {
     grid-template-columns: 1fr;
     gap: 10px 0;
   }
+  .lg-sub-html {
+    padding: 10px 18px !important;
+  }
+  .lg-prev, .lg-next {
+    bottom: 40px !important;
+  }
 }
 @media (max-width: 600px) {
   .gallery-block .arrow-btn {
-    width: 100%;
     display: flex;
     justify-content: center;
     padding: 18px;
@@ -2313,8 +2377,14 @@ input {
     box-shadow: 0px 4px 34px 0px rgba(148, 148, 148, 0.3);
     padding: 15px 20px;
   }
+  .live {
+    padding-bottom: 30px;
+  }
   .live .section__figure {
     margin-top: 20px;
+  }
+  .activity {
+    padding-bottom: 30px;
   }
   .activity .section__left-box {
     order: 3;
@@ -2329,6 +2399,9 @@ input {
     height: auto;
     width: 100%;
     min-height: 528px;
+  }
+  .creation {
+    padding-bottom: 30px;
   }
   .creation .section__card-caption {
     margin-bottom: 20px;
@@ -2345,6 +2418,9 @@ input {
   .creation .section__card-info {
     gap: 0;
   }
+  .awards {
+    padding-bottom: 30px;
+  }
   .awards .section__left-box {
     margin-top: 20px;
   }
@@ -2358,7 +2434,7 @@ input {
     display: none;
   }
   .family {
-    margin-bottom: 50px;
+    padding-bottom: 30px;
   }
   .family .section__left-box {
     padding: 15px 20px;

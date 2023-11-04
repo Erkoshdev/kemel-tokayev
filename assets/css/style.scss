@@ -8,8 +8,8 @@
     background-color: #F7F7F8;
     background-image: url("../img/img-kemel-tokayev-light.png");
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 800px auto;
+    background-position: right -50px bottom;
+    background-size: 950px auto;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@
         >.title {
             color: var(--text-gray);
             margin-bottom: 0;
-            font-size: 54px;
+            font-size: 40px;
         }
 
         .swiper {

@@ -782,8 +782,8 @@ input {
   background-color: #F7F7F8;
   background-image: url("../img/img-kemel-tokayev-light.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 800px auto;
+  background-position: right -50px bottom;
+  background-size: 950px auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -859,7 +859,7 @@ input {
 .works-header > .title {
   color: var(--text-gray);
   margin-bottom: 0;
-  font-size: 54px;
+  font-size: 40px;
 }
 .works-header .swiper-btns {
   display: flex;
@@ -2202,11 +2202,17 @@ input {
     font-size: 16px;
   }
   .promo-title {
+    order: 1;
+    margin: 0;
+  }
+  .promo-date {
+    order: 2;
     margin: 10px 0;
   }
   .promo-quote {
     width: 170px;
     padding-top: 35px;
+    order: 3;
   }
   .promo-quote:before {
     width: 21px;

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8da38917-2cba-4976-9b76-70f2eb139c0d" name="Default Changelist" comment="" />
+    <list default="true" id="8da38917-2cba-4976-9b76-70f2eb139c0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/blocks/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/blocks/_global.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +39,9 @@
       <option name="presentableId" value="Default" />
       <updated>1695558180211</updated>
       <workItem from="1695558181451" duration="3459000" />
+      <workItem from="1698923985256" duration="898000" />
+      <workItem from="1698937985259" duration="27000" />
+      <workItem from="1699099266868" duration="278000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1695560909538</created>
@@ -44,7 +50,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695560909538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish">
+      <created>1698924119313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698924119313</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -52,6 +65,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
 </project>

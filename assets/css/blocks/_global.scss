@@ -177,6 +177,7 @@ input {
 
 .main {
     overflow-x: hidden;
+    margin-bottom: 85px;
 
     &.gallery {
         overflow-x:initial;
@@ -354,18 +355,42 @@ input {
 
 .arrow {
     &-btn {
-        padding: 10px 35px;
-        border: 1.5px solid var(--text-black);
+        width: 119px;
 
-        &:hover {
-            background-color: var(--text-black);
-            transition: all ease-in 0.3s;
+        &.swiper-button-prev,
+        &.swiper-button-next {
+            width: 119px;
+            border: 1px solid var(--text-black);
 
-            svg {
-                path {
-                    stroke: var(--white);
+            &::after {
+                content: '';
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: none;
+                padding: 18px 35px;
+            }
+        }
+
+        &.swiper-button {
+            &-prev {
+                left: 0;
+                &::after {
+                    background-image: url('../../assets/img/icons/ic-swiper-arrow-left-black.svg') !important;
                 }
             }
+        }
+        &.swiper-button {
+            &-next {
+                right: 0;
+                &::after {
+                    background-image: url('../../assets/img/icons/ic-swiper-arrow-right-black.svg') !important;
+                }
+            }
+        }
+
+        &.swiper-button-lock {
+            display: none;
         }
     }
 }
@@ -495,6 +520,8 @@ input {
         border: 1px solid var(--text-black);
         padding: 10px;
         color: var(--text-black);
+        text-decoration: none;
+        text-align: center;
 
         &:hover {
             transition: all ease-in .3s;

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8da38917-2cba-4976-9b76-70f2eb139c0d" name="Default Changelist" comment="">
+    <list default="true" id="8da38917-2cba-4976-9b76-70f2eb139c0d" name="Default Changelist" comment="finish">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/blocks/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/blocks/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writers.html" beforeDir="false" afterPath="$PROJECT_DIR$/writers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,7 @@
       <workItem from="1698923985256" duration="898000" />
       <workItem from="1698937985259" duration="27000" />
       <workItem from="1699099266868" duration="278000" />
+      <workItem from="1699168649049" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1695560909538</created>

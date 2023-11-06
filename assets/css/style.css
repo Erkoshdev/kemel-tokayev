@@ -2609,6 +2609,7 @@ input {
   .promo {
     background-image: url(../img/promo-__bg-sm.png);
     background-size: initial;
+    background-position: right bottom;
   }
   .promo__date {
     margin-bottom: 8px;

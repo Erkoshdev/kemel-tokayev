@@ -39,7 +39,7 @@
       <workItem from="1698923985256" duration="898000" />
       <workItem from="1698937985259" duration="27000" />
       <workItem from="1699099266868" duration="278000" />
-      <workItem from="1699168649049" duration="221000" />
+      <workItem from="1699168649049" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1695560909538</created>
@@ -62,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699168842124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add select to writers on mobile">
+      <created>1699168880948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699168880948</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

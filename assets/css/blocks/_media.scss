@@ -49,6 +49,7 @@
         }
     }
 }
+
 @media (max-width: 1024px) {
     .biography {
         .section__left-box {
@@ -177,7 +178,16 @@
         }
     }
 }
+
 @media (max-width: 991px) {
+    .promo {
+        background-size: 900px auto;
+        background-position: right -190px bottom;
+    }
+    .promo-quote {
+        max-width: 300px;
+    }
+
     // Header
     .header {
         .menu {

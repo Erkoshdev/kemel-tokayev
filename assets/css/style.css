@@ -2150,6 +2150,13 @@ input {
   }
 }
 @media (max-width: 991px) {
+  .promo {
+    background-size: 900px auto;
+    background-position: right -190px bottom;
+  }
+  .promo-quote {
+    max-width: 300px;
+  }
   .header .menu {
     display: none;
   }

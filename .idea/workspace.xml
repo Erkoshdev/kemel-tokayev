@@ -41,6 +41,7 @@
       <workItem from="1699099266868" duration="278000" />
       <workItem from="1699168649049" duration="287000" />
       <workItem from="1699248820365" duration="43000" />
+      <workItem from="1699416472810" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1695560909538</created>
@@ -77,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699248849505</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change slide card width">
+      <created>1699416533377</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699416533377</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +97,7 @@
     <MESSAGE value="finish 2" />
     <MESSAGE value="add select to writers on mobile" />
     <MESSAGE value="fix main page img on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix main page img on mobile" />
+    <MESSAGE value="change slide card width" />
+    <option name="LAST_COMMIT_MESSAGE" value="change slide card width" />
   </component>
 </project>

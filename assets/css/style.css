@@ -392,7 +392,7 @@ input {
 }
 
 .card {
-  padding: 20px 22px !important;
+  padding: 20px !important;
   background-color: var(--white) !important;
   border: none !important;
   border-radius: 0 !important;
@@ -405,19 +405,18 @@ input {
   padding: 0 !important;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .card-img {
   width: 100%;
-  height: 265px;
+  height: 309px;
   position: relative;
   background: #424242;
 }
 .card-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-img .detail {
   display: grid;
@@ -447,8 +446,12 @@ input {
   gap: 0 12px;
   margin-bottom: 10px;
 }
+.card-content {
+  margin-top: 10px;
+}
 .card-name > .title, .card-name > .subtitle {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .card-name > .subtitle > .city {
   margin-left: 10px;
@@ -482,7 +485,7 @@ input {
 }
 .card-description {
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -496,23 +499,51 @@ input {
   background: transparent !important;
   border: none !important;
 }
+.card-img-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-top: -56px;
+}
 .card-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--text-black);
+  background: #FFF;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
   padding: 10px;
   color: var(--text-black);
   text-decoration: none;
   text-align: center;
 }
+.card-btn svg path, .card-btn svg rect {
+  transition: ease 0.2s;
+}
 .card-btn:hover {
-  transition: all ease-in 0.3s;
+  transition: ease 0.2s;
   background-color: var(--text-black);
   color: var(--white);
 }
 .card-btn:hover svg path, .card-btn:hover svg rect {
   stroke: var(--white);
+  transition: ease 0.2s;
+}
+.card-btn:disabled {
+  color: #BCBCBD;
+  cursor: auto;
+}
+.card-btn:disabled:hover {
+  background: #FFF;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  color: #BCBCBD;
+}
+.card-btn:disabled svg path, .card-btn:disabled svg rect {
+  stroke: #BCBCBD;
+}
+.card-btn:disabled:hover svg path, .card-btn:disabled:hover svg rect {
+  stroke: #BCBCBD;
 }
 
 .dark-mode .breadcrumbs .list-link.back-btn::before {
@@ -783,7 +814,7 @@ input {
   background-image: url("../img/img-kemel-tokayev-light.png");
   background-repeat: no-repeat;
   background-position: right -50px bottom;
-  background-size: 950px auto;
+  background-size: auto 80vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -848,18 +879,18 @@ input {
 }
 
 .works {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .works-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 .works-header > .title {
   color: var(--text-gray);
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 21px;
 }
 .works-header .swiper-btns {
   display: flex;
@@ -871,6 +902,8 @@ input {
 }
 .works-body .swiper-slide {
   height: auto;
+  width: calc(25% - 15px);
+  min-width: 278px;
 }
 
 .writers .page-body {
@@ -2271,6 +2304,10 @@ input {
   }
 }
 @media (min-width: 991px) {
+  .menu-btn {
+    opacity: 0;
+    visibility: hidden;
+  }
   .writers .page-header .breadcrumbs, .writers .page-header .title {
     display: none;
   }
@@ -2372,15 +2409,6 @@ input {
   .card-img .detail {
     display: none;
   }
-  .card-name > .title, .card-name > .subtitle {
-    font-size: 24px;
-  }
-  .card-name > .subtitle > .city {
-    display: none;
-  }
-  .card-name > .lang {
-    display: block;
-  }
   .gallery-description .iframe {
     height: 294px;
   }
@@ -2430,9 +2458,6 @@ input {
   .card {
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 34px 0px rgba(148, 148, 148, 0.3);
-  }
-  .card-img {
-    height: 230px;
   }
   .card-star {
     display: none;

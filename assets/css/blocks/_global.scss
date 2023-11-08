@@ -396,7 +396,7 @@ input {
 }
 
 .card {
-    padding: 20px 22px !important;
+    padding: 20px!important;
     background-color: var(--white) !important;
     border: none !important;
     border-radius: 0 !important;
@@ -409,19 +409,18 @@ input {
         padding: 0 !important;
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
     &-img {
         width: 100%;
-        height: 265px;
+        height: 309px;
         position: relative;
         background: #424242;
 
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
 
         .detail {
@@ -456,9 +455,14 @@ input {
         margin-bottom: 10px;
     }
 
+    &-content {
+        margin-top: 10px;
+    }
+
     &-name {
         >.title, >.subtitle {
             margin-bottom: 10px;
+            font-size: 18px;
         }
         >.subtitle {
             >.city {
@@ -497,7 +501,7 @@ input {
 
     &-description {
         font-family: 'Montserrat';
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -513,28 +517,64 @@ input {
         border: none !important;
     }
 
+    &-img-tools {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-top: -56px;
+    }
+
     &-btn {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid var(--text-black);
+        background: #FFF;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
         padding: 10px;
         color: var(--text-black);
         text-decoration: none;
         text-align: center;
 
+        svg {
+            path, rect {
+                transition: ease .2s;
+            }
+        }
+
         &:hover {
-            transition: all ease-in .3s;
+            transition: ease .2s;
             background-color: var(--text-black);
             color: var(--white);
 
             svg {
                 path, rect {
                     stroke: var(--white);
+                    transition: ease .2s;
                 }
             }
         }
     }
+    &-btn:disabled {
+        color: #BCBCBD;
+        cursor: auto;
+    }
+    &-btn:disabled:hover {
+        background: #FFF;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+        color: #BCBCBD;
+    }
+    &-btn:disabled svg {
+        path, rect {
+            stroke: #BCBCBD;
+        }
+    }
+    &-btn:disabled:hover svg {
+            path, rect {
+                stroke: #BCBCBD;
+            }
+        }
 }
 
 .dark-mode {

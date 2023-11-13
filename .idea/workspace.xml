@@ -43,6 +43,7 @@
       <workItem from="1699248820365" duration="43000" />
       <workItem from="1699416472810" duration="77000" />
       <workItem from="1699430750122" duration="187000" />
+      <workItem from="1699437876634" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1695560909538</created>
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699430861451</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix main on tablet">
+      <created>1699437927314</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699437927314</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +115,7 @@
     <MESSAGE value="fix main page img on mobile" />
     <MESSAGE value="change slide card width" />
     <MESSAGE value="fix title size of section in creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix title size of section in creation" />
+    <MESSAGE value="fix main on tablet" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix main on tablet" />
   </component>
 </project>

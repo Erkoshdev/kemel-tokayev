@@ -616,7 +616,6 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            border: 1px solid rgba(255,255,255,0.03);
             background-color: #4f4f4f;
         }
 
@@ -724,7 +723,7 @@
     &-swiper {
         width: 100%;
         // max-width: 764px;
-        height: 567px;
+        height: 659px;
         overflow: hidden;
         position: relative;
     }
